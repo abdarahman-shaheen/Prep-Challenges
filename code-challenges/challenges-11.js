@@ -131,16 +131,34 @@ return item.firstName+" "+item.lastName
 // -------------
 
 function gradesAvg(arr) {
-   let sum =0;
-   let count=0;
-   arr.forEach(element => {
-    sum+=element.gradsList
-   });
-   let abj=arr.map((item)=>{
-   return {"firstName":item.firstName,"lastName":item.lastName,"gradsList":item.gradsList}
-   })
-   return abj;
+//    let sum =0;
+//    let count=0;
+//    arr.forEach(element => {
+//     sum+=element.gradsList
+//    });
+//    let abj=arr.map((item)=>{
+//    return {"firstName":item.firstName,"lastName":item.lastName,"gradsList":item.gradsList}
+//    })
+//    return abj;
 }
+// function gradesAvg(arr) {
+//     let abj=arr.map((item)=>{
+//       let avg=0;
+//       let sum =0;
+//     let count=0;
+//       item.gradsList.forEach(element=>{
+//        sum+=element;
+//        count++;
+//      })
+//      avg=sum/count
+//      console.log(avg);
+//    ))
+//     return {"firstName":item.firstName,"lastName":item.lastName,"gradsList":item.gradsList,Avg:avg}
+//     })
+   
+//     return abj;
+   
+//  }
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
