@@ -18,7 +18,8 @@
 // 
 
 const oddFiltration = (arr) => {
-    return arr.filter((item) => item % 2 !== 0);}
+  
+    return arr.filter(item=>item%2!=0)}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -76,7 +77,6 @@ const cvsFiltration = (arr) => {
         if (item.LastName !== null) {
           fullName += " " + item.LastName;
         }
-
         return { fullName: fullName, 
                  tech: item.tech };
       })
@@ -96,7 +96,7 @@ const cvsFiltration = (arr) => {
 // 
 
 const vowelsFiltration = (arr) => {
-    // write your code here
+ return arr.filter(str => !/[aeiou]/i.test(str));
 } 
 // -------------------------------------------------------------------------------------------------------
 
@@ -118,7 +118,8 @@ const vowelsFiltration = (arr) => {
 // - the 'include' method can help you, read about it.
 
 const skillComparison = (arr1, arr2) => {
-    // write your code here
+ 
+  return arr1.filter(item=>!arr2.includes(item)).concat(arr2.filter(element=>!arr1.includes(element)))
 }
 // -------------------------------------------------------------------------------------------------------
 
