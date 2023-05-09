@@ -55,7 +55,14 @@ const detectFace = (arr) => {
 // Input <= "coding" output =>"cdn"
 
 const eveCharacter = (str) => {
-    //write your code here ...
+    let arr=[];
+  // arr.push(str[str.length-1]);
+  for(let i =0;i<=str.length-1;i+=2){
+    arr.push(str[i]);
+  }
+  arr=arr.join("");
+  return arr;
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -76,7 +83,11 @@ const eveCharacter = (str) => {
 
 
 const chickenGradients = (arr) => {
-    //write your code here ...
+    let arr2=[];
+   arr.forEach(element => {
+          arr2.push(element.filter(item=>item.includes("chicken")))
+    });
+    return arr2;
 }
 // -------------------------------------------------------------------------------------------------------
 
