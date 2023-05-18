@@ -15,11 +15,7 @@
 //
 
 const wordLength = (str) => {
-    var words = str.split(" ");
-    var middleWordIndex = Math.floor(words.length / 2);
-    var middleWord = words[middleWordIndex];
-
-    return middleWord.length
+    // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -44,10 +40,7 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
-    var sortedString1 = str1.split("").sort().join("");
-  var sortedString2 = str2.split("").sort().join("");
-
-  return sortedString1 === sortedString2;
+    // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
 
