@@ -24,14 +24,14 @@
         {
             "language": "markdown",
             "source": [
-                "https://www.hackerrank.com/challenges/append-and-delete/submissions/code/328161841"
+                "https://www.hackerrank.com/challenges/append-and-delete/submissions/code/328161841\n\n"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "function appendAndDelete(s, t, k) {\n    const sLength = s.length;\n const tLength = t.length;\n\n\n if (k >= sLength + tLength) {\n   return \"Yes\";\n }\n\n let PrefixLength = 0;\n\n while (PrefixLength < sLength && PrefixLength < tLength && s[PrefixLength] === t[PrefixLength]) {\n   PrefixLength++;\n }\n\n const minOperat = sLength - PrefixLength + tLength - PrefixLength;\n\n\n if (k >= minOperat && (k - minOperat) % 2 === 0) {\n   return \"Yes\";\n }\n\n return \"No\";\n\n}"
+                "\n//\n\nfunction appendAndDelete(s, t, k) {\n    const sLength = s.length;\n const tLength = t.length;\n\n\n if (k >= sLength + tLength) {\n   return \"Yes\";\n }\n\n let PrefixLength = 0;\n\n while (PrefixLength < sLength && PrefixLength < tLength && s[PrefixLength] === t[PrefixLength]) {\n   PrefixLength++;\n }\n\n const minOperat = sLength - PrefixLength + tLength - PrefixLength;\n\n\n if (k >= minOperat && (k - minOperat) % 2 === 0) {\n   return \"Yes\";\n }\n\n return \"No\";\n\n}"
             ],
             "outputs": []
         },
